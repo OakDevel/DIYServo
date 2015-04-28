@@ -13,8 +13,11 @@ DIYServo::DIYServo(int p1, int p2, int p3, int p4)
 	M_Pin2 = p2;
 	M_PWMPin = p3;
 	potPin = p4;
+	
 	pinMode(M_Pin1, OUTPUT);
 	pinMode(M_Pin2, OUTPUT);
+	pinMode(potPin, INPUT);
+	pinMode(M_PWMPin, OUTPUT);
 	//Debugging purpose
 	// Serial.println("Creating DYIServo constructor");
 
@@ -92,7 +95,7 @@ void DIYServo::GoToAngle(int target, int howFast)
 
 		 //Printing status for debugging purpose
 
-	  Serial.print("Pot Pin:");
+      Serial.print("Pot Pin:");
       Serial.print(analogRead(potPin));
       Serial.print(",   Max vlue:");
       Serial.print(MAX_ANGLE);
