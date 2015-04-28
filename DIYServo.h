@@ -1,5 +1,5 @@
 /**************************************
-* Library for DYI Servo from DC Motor 
+* Library for DIY Servo from DC Motor 
 * - Original Author: https://bayesianadventures.wordpress.com/2014/01/04/diy-servo-motor-cheap-and-with-plenty-muscle/
 ****************************************/
 
