@@ -1,13 +1,13 @@
 #include <DIYServo.h>
 
 
-int motor_p1 = 7;
-int motor_p2 = 8;
-int pwmPin = 3;
-int readPin = 5;
+int motor_p1 = 7; // Digital Output
+int motor_p2 = 8; // Digital Output
+int pwmPin = 3; // PWM Pin
+int potPin = 5; // Goes to the analog side of arduino
  
  
-DIYServo customServo(motor_p1, motor_p2, pwmPin, readPin); //create an instance of the DC motor Class
+DIYServo customServo(motor_p1, motor_p2, pwmPin, potPin); //create an instance of the DC motor Class
  
 //set the speed at which the motor will turn (Max speed = 255)
 int turnSpeed = 100;
